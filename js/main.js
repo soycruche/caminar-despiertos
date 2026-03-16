@@ -33,12 +33,10 @@ document.querySelectorAll('.faq-question').forEach(btn => {
 document.getElementById('emailForm').addEventListener('submit', function(e) {
   e.preventDefault();
   const form = this;
-  const data = new FormData(form);
-
-  fetch('/', {
+  fetch('https://formspree.io/f/mjgaaznn', {
     method: 'POST',
-    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-    body: new URLSearchParams(data).toString()
+    headers: { 'Accept': 'application/json' },
+    body: new FormData(form)
   })
     .then(() => {
       form.style.display = 'none';
