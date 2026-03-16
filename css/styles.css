@@ -634,7 +634,10 @@ nav.scrolled {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.4rem;
+}
+.option-icon svg {
+  width: 32px;
+  height: 32px;
 }
 .option-label {
   font-size: 0.72rem;
