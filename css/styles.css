@@ -61,7 +61,7 @@ nav.scrolled {
   align-items: center;
 }
 .nav-logo img {
-  height: 32px;
+  height: 40px;
   width: auto;
 }
 .nav-links {
@@ -860,7 +860,7 @@ footer {
   gap: 24px;
 }
 .footer-logo img {
-  height: 28px;
+  height: 40px;
   width: auto;
   opacity: 0.7;
 }
