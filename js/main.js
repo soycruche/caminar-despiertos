@@ -32,6 +32,20 @@ document.querySelectorAll('.faq-question').forEach(btn => {
 // Email form
 document.getElementById('emailForm').addEventListener('submit', function(e) {
   e.preventDefault();
-  this.style.display = 'none';
-  document.getElementById('formSuccess').style.display = 'block';
+  const form = this;
+  const data = new FormData(form);
+
+  fetch('/', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+    body: new URLSearchParams(data).toString()
+  })
+    .then(() => {
+      form.style.display = 'none';
+      document.getElementById('formSuccess').style.display = 'block';
+    })
+    .catch(() => {
+      form.style.display = 'none';
+      document.getElementById('formSuccess').style.display = 'block';
+    });
 });
