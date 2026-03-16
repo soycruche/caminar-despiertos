@@ -56,14 +56,14 @@ nav.scrolled {
   box-shadow: 0 1px 0 rgba(17,17,17,0.08);
 }
 .nav-logo {
-  font-family: var(--serif);
-  font-size: 1.1rem;
-  font-weight: 400;
-  letter-spacing: 0.08em;
-  color: var(--cream);
   text-decoration: none;
+  display: flex;
+  align-items: center;
 }
-.nav-logo span { color: var(--terra-l); font-style: italic; }
+.nav-logo img {
+  height: 32px;
+  width: auto;
+}
 .nav-links {
   display: flex;
   gap: 36px;
@@ -859,13 +859,11 @@ footer {
   flex-wrap: wrap;
   gap: 24px;
 }
-.footer-logo {
-  font-family: var(--serif);
-  font-size: 1.1rem;
-  font-weight: 400;
-  color: var(--cream);
+.footer-logo img {
+  height: 28px;
+  width: auto;
+  opacity: 0.7;
 }
-.footer-logo em { font-style: italic; color: var(--terra-l); }
 .footer-links {
   display: flex;
   gap: 28px;
