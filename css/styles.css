@@ -537,15 +537,15 @@ nav.scrolled .nav-links a:hover { color: var(--cream); }
 
 .precios-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 24px;
-  max-width: 900px;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  max-width: 1100px;
   margin: 0 auto;
 }
 
 .precio-card {
   border: 1px solid rgba(17,17,17,0.12);
-  padding: 52px 48px;
+  padding: 40px 32px;
   position: relative;
   transition: all 0.4s ease;
 }
