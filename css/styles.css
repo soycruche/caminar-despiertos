@@ -6,8 +6,8 @@
   --warm:    #f2f2f2;
   --terra:   #e05a00;
   --terra-l: #f07030;
-  --stone:   #666666;
-  --stone-l: #999999;
+  --stone:   #444444;
+  --stone-l: #555555;
   --dark:    #000000;
   --serif:   'Cormorant Garamond', Georgia, serif;
   --sans:    'DM Sans', sans-serif;
@@ -525,6 +525,7 @@ nav.scrolled .nav-links a:hover { color: var(--cream); }
   transition: all 0.3s;
 }
 .barbara-link:hover { color: var(--cream); border-color: var(--cream); }
+.barbara-link-second { display: block; margin-top: 14px; width: fit-content; }
 
 /* ── PRECIOS ── */
 .precios-section {
